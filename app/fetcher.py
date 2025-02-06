@@ -1,9 +1,4 @@
-# app/fetcher.py
-import requests
 import yfinance as yf
-
-# API_KEY = 'UDAHZTUN13X2QJU0'  # 若 API 有驗證需求
-# BASE_URL = 'https://www.alphavantage.co/query'
 
 def fetch_stock_data(symbol):
     """
