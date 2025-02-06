@@ -53,4 +53,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: yourdockerhubusername/futures-stock-info:latest
+          tags: rekam/futures-stock-info:latest
