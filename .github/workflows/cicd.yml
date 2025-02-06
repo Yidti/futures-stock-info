@@ -4,9 +4,19 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+    - 'README.md'
+    - 'requirements.txt'
+    - 'Dockerfile'
+    - '.github/workflows/cicd.yml'
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - '.github/workflows/ci-cd.yml'
 
 jobs:
   build-test:
