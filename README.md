@@ -32,6 +32,7 @@
 3. **建置 Docker Image**
 4. **將 Image 推送至 Docker Hub**
 5. **Render會依照Docker Hub自動部署**
+
 註：若只修改文件內容而無其他程式碼更動（例如修改 README.md），則不會觸發 CI/CD 流程。
 ### **GitHub Secrets 設定**
 在 GitHub Repository **Settings > Secrets** 中新增以下憑證：
