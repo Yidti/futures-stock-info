@@ -26,6 +26,21 @@
 
 ---
 
+## 防止 Render 進入休眠
+
+Render 的免費計劃會在長時間沒有請求的情況下將應用實例進入休眠狀態，這可能會導致首次請求的延遲。為了避免這種情況，我們可以使用 **[https://cron-job.org/](https://cron-job.org/)** 來定期發送請求，保持應用活躍。
+
+### 設定步驟：
+1. 註冊並登錄 **[cron-job.org](https://cron-job.org/)**。
+2. 在該網站上創建一個新的任務，設定為定期訪問你的 Render 網站 URL：
+   - 設定 URL 為 `https://futures-stock-info-latest.onrender.com/`
+   - 設定間隔為每 10 分鐘或你選擇的時間間隔。
+   
+這樣，**cron-job.org** 會定期訪問你的應用，從而防止它進入休眠狀態。
+
+---
+
+
 ## 開發環境設定
 
 1. 克隆此專案：
