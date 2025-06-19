@@ -15,6 +15,11 @@
    ```sh
    docker run -p 5001:5001 futures-stock-info
    ```
+### **`yfinance` 套件更新**
+若遇到 `yfinance` 相關的錯誤 (例如速率限制或版本衝突)，請執行以下指令將其更新至最新版本，這通常能解決大部分問題：
+```sh
+pip install --upgrade yfinance
+```
 ---
 
 ## 部署到 Render
@@ -79,4 +84,3 @@ python -m unittest discover tests
 
 - [Render 部署頁面](https://futures-stock-info-latest.onrender.com/)
 - [GitHub Repository](https://github.com/yourusername/futures-stock-info)
-
